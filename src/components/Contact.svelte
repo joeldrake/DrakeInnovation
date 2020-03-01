@@ -27,10 +27,5 @@
       </a>
     </div>
 
-    <p class="Contact__company-details">
-      Drake Innovation AB
-      <br />
-      Org.nr. 55555-1234
-    </p>
   </div>
 </div>

@@ -3,7 +3,7 @@
   --color-background-primary: #005cef;
   --color-interactive-primary: #fff;
 
-  min-height: 50vh;
+  min-height: 100vh;
   background-color: var(--color-background-primary);
   color: #fff;
 
@@ -42,10 +42,6 @@
 
   .Contact__socialMedia {
     margin-bottom: 3rem;
-    text-align: center;
-  }
-
-  .Contact__company-details {
     text-align: center;
   }
 

@@ -82,9 +82,7 @@
 
       <div class="Work__box invisibleSideScrolling">
         <h3>Github</h3>
-        <p>
-          Visit my Github page for more personal projects and code examples.
-        </p>
+        <p>Visit my Github page for personal projects and code examples.</p>
         <p>You can find the source code for this website there.</p>
         <p>
           <a href="https://github.com/joeldrake">github.com/joeldrake</a>
