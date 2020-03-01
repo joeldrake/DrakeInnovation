@@ -3,7 +3,12 @@
   --color-background-primary: #005cef;
   --color-interactive-primary: #fff;
 
-  min-height: 100vh;
+  min-height: 50vh;
+
+  @media screen and (max-width: 768px) {
+    min-height: 100vh;
+  }
+
   background-color: var(--color-background-primary);
   color: #fff;
 

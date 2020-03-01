@@ -2,7 +2,11 @@
   --color-background-primary: var(--color-work);
   --color-background-secondary: #fff;
 
-  min-height: 100vh;
+  min-height: 50vh;
+
+  @media screen and (max-width: 768px) {
+    min-height: 100vh;
+  }
   background-color: var(--color-background-primary);
 }
 
