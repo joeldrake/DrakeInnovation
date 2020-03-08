@@ -3,6 +3,15 @@
   background-image: url('/img/joeldrake.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: 1600px) {
+    background-image: url('/img/joeldrake.jpg'),
+      linear-gradient(90deg, #b1b1a7 20%, #e8e8e0 80%);
+    background-size: auto 100%, cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .Start__inner {
@@ -13,8 +22,12 @@
   align-items: flex-end;
   justify-content: center;
   min-height: 100vh;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+  max-height: 1067px;
+
+  @media screen and (min-width: 1600px) {
+    min-height: unset;
+    height: 100vh;
+  }
 }
 
 .Start__continueLink {
