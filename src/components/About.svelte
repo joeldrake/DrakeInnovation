@@ -15,11 +15,11 @@
         experience and knowledge of setting up full tech stacks.
       </p>
       <p>
-        I have been building websites since I was young. When I got in to
-        <b>React</b>
-        my love for web development seriously took off, and I haven't looked
-        back since. Since 2019 I work with a team building a web app for a big
-        retail company in Sweden. This project is in
+        I have been building websites since I was young. Was part of a startup a
+        few years back, and got some good experience working with
+        <b>React.</b>
+        Since 2019 I work with a team building a web app for a big retail
+        company in Sweden. This project is in
         <b>Vue</b>
         which have been fun to learn more about. In personal projects I have
         started using
