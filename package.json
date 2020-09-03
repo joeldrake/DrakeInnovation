@@ -35,7 +35,7 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-svelte": "^5.1.1",
     "rollup-plugin-terser": "^5.2.0",
-    "sapper": "^0.27.10",
+    "sapper": "^0.27.11",
     "smoothscroll-polyfill": "^0.4.4",
     "svelte": "^3.19.1",
     "svelte-preprocess": "^3.4.0"
