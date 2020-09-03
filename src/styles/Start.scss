@@ -5,12 +5,10 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  @media screen and (min-width: 1600px) {
-    background-image: url('/img/joeldrake.jpg'),
-      linear-gradient(90deg, #b1b1a7 20%, #e8e8e0 80%);
-    background-size: auto 100%, cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  @media screen and (min-width: 1032px) {
+    background-color: var(--color-background-primary);
+    background-size: 1000px auto;
+    background-position: center 72px;
   }
 }
 
@@ -24,9 +22,9 @@
   min-height: 100vh;
   max-height: 1067px;
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1032px) {
     min-height: unset;
-    height: 100vh;
+    height: 732px;
   }
 }
 
