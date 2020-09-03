@@ -4,19 +4,9 @@
   let navToggle,
     addedEventListeners = false;
   let onClickNavLink = e => {
-    navToggle.checked = false;
-    removeEventListeners();
-
-    const hash = e.target.hash;
-    const target = document.getElementById(hash.substring(1));
-
-    if (target) {
-      e.preventDefault();
-      goto(e.target.hash);
-      window.scrollTo({
-        top: target.offsetTop,
-        behavior: 'smooth',
-      });
+    if (addedEventListeners) {
+      navToggle.checked = false;
+      removeEventListeners();
     }
   };
 
