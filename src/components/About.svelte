@@ -21,8 +21,8 @@
         Since 2019 I work with a team building a web app for a big retail
         company in Sweden. This project is in
         <b>Vue</b>
-        which have been fun to learn more about. In personal projects I have
-        started using
+        which have been fun to learn more about. In personal projects I like to
+        try new things out. This website is built with
         <b>Svelte.</b>
       </p>
       <p>
