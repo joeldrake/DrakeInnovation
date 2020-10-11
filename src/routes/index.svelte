@@ -10,9 +10,8 @@
 
   import throttle from 'lodash/throttle';
 
-  let handleScrollThrottled, start, isAutoScrolling;
-
-  const inViewPercent = 0.5;
+  let handleScrollThrottled, start;
+  const serverSide = typeof window === 'undefined';
 
   onMount(() => {
     handleScrollThrottled = throttle(handleScroll, 300, { leading: false });
@@ -26,7 +25,6 @@
       const target = document.getElementById(hash);
 
       if (target) {
-        setAutoScrolling();
         window.scrollTo({
           top: target.offsetTop,
           behavior: 'smooth',
@@ -38,30 +36,17 @@
   });
 
   onDestroy(() => {
-    if (typeof window !== 'undefined') {
-      removeEventListeners();
-    }
+    removeEventListeners();
   });
 
   const addEventListeners = () => {
+    if (serverSide) return;
     document.addEventListener('scroll', handleScrollThrottled);
-    window.addEventListener('hashchange', onHashchange, false);
   };
 
   const removeEventListeners = () => {
+    if (serverSide) return;
     document.removeEventListener('scroll', handleScrollThrottled);
-    window.addEventListener('hashchange', onHashchange, false);
-  };
-
-  const onHashchange = () => {
-    setAutoScrolling();
-  };
-
-  const setAutoScrolling = () => {
-    isAutoScrolling = true;
-    setTimeout(() => {
-      isAutoScrolling = false;
-    }, 500);
   };
 
   const handleScroll = e => {
